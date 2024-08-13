@@ -7,7 +7,7 @@
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/skincareWebsite/skincareLogo1PNG.png" alt="logo" loading="eager"></h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-fluid" src="https://leahbasson.github.io/MyImages/skincareWebsite/skincareLogo2.gif" alt="logo" loading="eager"></h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             
@@ -85,7 +85,7 @@
 
 <style scoped>
 img[alt='logo']{
-    width: 16rem;
+    width: 15rem;
     object-fit: cover;
     object-position: center;
     transition: all .5s;
@@ -115,6 +115,18 @@ img[alt='logo']:hover{
 
 :is(.dropdown-item:active){
     background-color: #5D7599;
+}
+
+@media (width < 999px)
+{ 
+  .navbar-nav{
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+    img[alt='logo']{
+      width: 12rem;
+    }
 }
 
 </style>

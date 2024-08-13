@@ -17,4 +17,13 @@
     justify-content: center;
     color: var(--primary);
 }
+
+@media (width < 999px)
+{ 
+    .header{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+}
+
 </style>
