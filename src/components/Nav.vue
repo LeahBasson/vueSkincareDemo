@@ -66,9 +66,9 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#account"><i class="bi bi-person"></i></a>
                   </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#bag"><i class="bi bi-bag"></i></a>
-                </li>
+                </li> -->
               </ul>
             </div>
     
