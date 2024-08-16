@@ -26,6 +26,7 @@
 }
 
 .card-header{
+    padding: 0;
     border-bottom: 2px solid var(--alternative);
 }
 
