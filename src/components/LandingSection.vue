@@ -133,6 +133,19 @@
 </div>  
   </div>
 
+  <div class="home-ourStory">
+    <h1 class="pt-4 heading">Sustainably Sourced</h1>
+    <div class="ourStoryCards">
+      <div class="card text-bg-dark">
+      <img class="img-fluid" src="https://leahbasson.github.io/MyImages/skincareWebsite/peta-approved.jpg" alt="Rabbit" loading="eager">
+  <div class="card-img-overlay">
+    <h5 class="card-title">PETA  Approved</h5>
+  </div>
+</div>
+    </div>
+    
+  </div>
+
 
 </div>
         
@@ -352,6 +365,21 @@ img[alt='slideImage']{
   cursor: pointer;
 }
 
+.card{
+  width: 18rem;
+  border-radius: 0%;
+}
+
+.ourStoryCards{
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.ourStoryCards .card-title{
+  color: var(--secondary);
+}
+
 @media (width < 999px)
 { 
   img[alt='slideImage']{
@@ -402,6 +430,36 @@ img[alt='slideImage']{
   margin: auto;
   width: 13rem;
 }
+
+.carousel-caption2{
+  z-index: 1;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    text-align: center;
+    color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel-caption2 p{
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.carousel-caption2 h1{
+  font-size: 0.9rem;
+}
+
+.card{
+  width: 13rem;
+}
+
 }
 
 </style>
