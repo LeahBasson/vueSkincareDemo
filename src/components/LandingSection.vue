@@ -81,7 +81,7 @@
     
     </div>
 
-    <div class="btn-shopNew">View More</div>
+    <a class="shopNewlnk" href="#New"><div class="btn-shopNew">View More</div></a>
     
   </div>
 
@@ -99,10 +99,43 @@
     </div>
   </div>
 
-</div>
+  <div class="home-skinConcern ">
     
+    <div id="carouselExample" class="carousel slide pt-5" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="overlay"></div>
+      <img class="img-fluid" src="https://leahbasson.github.io/MyImages/skincareWebsite/wrinkleSkin.png" alt="slideImage" loading="eager">
+      <div class="carousel-caption2">
+        <h1 class="animate__animated animate__fadeInUp">Reveal Your Youthful Glow: Say Goodbye to Wrinkles</h1>
+        <p class="animate__animated animate__fadeInUp">Fine lines and wrinkles don’t stand a chance with our advanced skincare solutions. Packed with powerful ingredients, our products are designed to rejuvenate and nourish your skin, leaving it smooth, firm, and radiant.</p>
+        <button class="hb-button animate__animated animate__fadeInUp">Discover</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="overlay"></div>
+      <img class="img-fluid" src="https://leahbasson.github.io/MyImages/skincareWebsite/sensitiveSkin.png" alt="slideImage" loading="eager">
+      <div class="carousel-caption2">
+        <h1 class="animate__animated animate__fadeInUp">Gentle Care for Sensitive Skin</h1>
+        <p class="animate__animated animate__fadeInUp">Discover our specially formulated products designed to soothe and protect delicate skin.Caring for sensitive skin requires the right balance of gentle yet effective ingredients. </p>
+        <button class="hb-button animate__animated animate__fadeInUp">Discover</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>  
+  </div>
 
-      
+
+</div>
+        
 </template>
 
 <script>
@@ -141,14 +174,6 @@ img[alt='slideImage']{
     z-index: 1;
 }
 
-.hb-content{
-    position: absolute;
-    top: 10rem;
-    left: 28rem;
-    width: 40rem;
-    z-index: 1;
-}
-
 .carousel-caption{
   z-index: 1;
   position: absolute;
@@ -159,23 +184,22 @@ img[alt='slideImage']{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 40rem;
 }
 
 .carousel-caption h1{
     color: var(--secondary);
     font-size: 2.6rem;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .carousel-caption p{
     color: var(--secondary);
     text-align: center;
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 .hb-button{
@@ -183,7 +207,7 @@ img[alt='slideImage']{
     background-color: var(--alternative);
     border: 1px solid var(--primary);
     border-radius: 0.5rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     margin-top: 1rem;
 }
@@ -207,7 +231,7 @@ img[alt='slideImage']{
 }
 
 .heading{
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: var(--primary);
 }
@@ -250,8 +274,12 @@ img[alt='slideImage']{
   background-color: var(--alternative);
   color: var(--primary);
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 0.5rem;
+}
+
+.shopNewlnk{
+  text-decoration: none;
 }
 
 .skinTypeCircles{
@@ -297,6 +325,31 @@ img[alt='slideImage']{
 
 .circle-overlay a{
   text-decoration: none;
+}
+
+.carousel-caption2{
+  z-index: 1;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60rem;
+    text-align: left;
+    color: var(--secondary);
+    font-family: "Poppins", sans-serif;
+}
+
+.carousel-caption2 p{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.home-skinConcern .carousel-item{
+  cursor: pointer;
 }
 
 @media (width < 999px)
